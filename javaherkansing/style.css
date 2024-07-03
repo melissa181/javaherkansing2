@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* bron: https://chatgpt.com/ prompt: why do my toppings not position right when i click on them while there are other toppings clicked? ik heb gekeken naar de informatie die ik kreeg en heb geexperimenteerd met de position code, wat werkte. */
+/* hulp van een vriendin gevraagd hoe ik de toppings kon layeren (z-index). ik begrijp dat als de z-index bij de pizza op 0, het zichtbaar is. de toppings op -1 betekent dat ze onder de pizza zijn gelayered */
+
+.pizza img {
+    position: relative;
+    z-index: 0;
+    width: 15em;
+    height: 15em;
+    margin: 10em 0em 0em 10em
+}
+
+.cheese {
+    position: absolute;
+    z-index: -1;
+    display: none;
+    margin: -13.5em 0em 0em 11.3em;
+}
+
+.pep {
+    position: absolute;
+    z-index: -1;
+    display: none;
+    margin: -13em 0em 0em 11.5em;
+}
+
+.olive {
+    position: absolute;
+    z-index: -1;
+    display: none;
+    margin: -10.1em 0em 0em 14.3em;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 5em;
+    margin-left: 2em;
+}
+
+/* bron: https://www.w3schools.com/css/css3_buttons.asp , gekeken naar hoe ik de buttons kon decoreren */
+
+.pepperonib {
+    margin: 1em;
+    background-color: #e22f2f;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.cheeseb {
+    margin: 1em;
+    background-color: #d7d434;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.oliveb {
+    margin: 1em;
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.resetb {
+    margin-top: 5em;
+    margin-left: 11em;
+    background-color: #575757;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}

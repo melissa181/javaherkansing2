@@ -1,0 +1,57 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Topper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="buttons">
+        <button id="addPepperoni" class="pepperonib">Add Pepperoni</button>
+        <button id="addCheese" class="cheeseb">Add Cheese</button>
+        <button id="addOlive" class="oliveb">Add Olive</button>
+    </div>
+
+    <!-- pizza en toppings zijn zelf gemaakt in Adobe Illustrator -->
+
+    <section>
+        <div class="pizza">
+            <img src="pizza.jpg" alt="pizza">
+        </div>
+
+        <div id="cheese" class="cheese">
+            <img src="cheese.png" alt="cheese">
+        </div>
+
+        <div id="pepperoni" class="pep">
+            <img src="pepperoni.png" alt="pepperoni">
+        </div>
+
+        <div id="olive" class="olive">
+            <img src="olive.png" alt="olive">
+        </div>
+    </section>
+
+    <button id="resetToppings" class="resetb">Reset</button>
+
+    <!-- hulp gevraagd aan vrienden hoe ik een audio kan toevoegen. Ik kreeg te horen dat ik eerst iets moest doen met een mp3 file in mijn HTML. Vervolgens heb ik zelf geprobeerd uit te zoeken hoe ik het moet toevoegen (zie onderste comment).-->
+    <!-- bron: https://chatgpt.com/ prompt: how do i add an mp3 audio in my html? Nadat ik eerst dezelfde audio had voor alle toppings (alleen de cheese sound), heb ik zelf geprobeerd een andere audio aan elke topping te geven. -->
+
+    <!-- bron cheese audio: https://pixabay.com/sound-effects/grilled-cheese-39091/ -->
+
+    <audio id="cheeseSound" src="cheesesound.mp3"></audio>
+
+    <!-- bron pepperoni audio: https://pixabay.com/sound-effects/knife-throw-1-105221/ -->
+
+    <audio id="pepperoniSound" src="pepperonisound.mp3"></audio>
+
+    <!-- bron olive audio: https://pixabay.com/sound-effects/movement-swipe-whoosh-3-186577/ -->
+
+    <audio id="oliveSound" src="olivesound.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
